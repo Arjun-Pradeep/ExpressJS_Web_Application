@@ -55,6 +55,6 @@ app.get('/gallery',(req,res)=>{
 }); 
 
 
-app.listen(8080,()=>{
+app.listen(process.env.PORT || 3000,()=>{
     console.log("Web App Running Successfully")
 });//3000 is port & listen is similar to run in flask

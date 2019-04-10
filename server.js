@@ -43,6 +43,10 @@ app.post('/register',(req,res)=>{
     var user=req.body.username;
     var pass=req.body.password;
     res.send(name+"<br>"adm+"<br>"clg+"<br>"user+"<br>"pass);
+
+
+
+    
 });
 
 app.get('/',(req,res)=>{

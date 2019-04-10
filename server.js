@@ -28,8 +28,12 @@ app.post('/getdata',(req,res)=>{
 app.post('/login',(req,res)=>{
     var user=req.body.username;
     var pass=req.body.password;
-    console.log(user);
-    console.log(pass);
+    if(user=='admin' && pass="1111"){
+        res.send("Success");
+    }
+    else{
+        res.send("Failed");
+    }
 });
 
 app.get('/',(req,res)=>{

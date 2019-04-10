@@ -42,11 +42,7 @@ app.post('/register',(req,res)=>{
     var clg=req.body.college;
     var user=req.body.username;
     var pass=req.body.password;
-    res.send(name+" "+adm+" "+clg+" "+user+" +pass);
-
-
-
-    
+    res.send(name+" "+adm+" "+clg+" "+user+" +pass);    
 });
 
 app.get('/',(req,res)=>{

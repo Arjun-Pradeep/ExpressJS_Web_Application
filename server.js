@@ -36,6 +36,15 @@ app.post('/login',(req,res)=>{
     }
 });
 
+app.post('/register',(req,res)=>{
+    var name=req.body.fname;
+    var adm=req.body.admn;
+    var clg=req.body.college;
+    var user=req.body.username;
+    var pass=req.body.password;
+    res.send(name+adm+clg+user+pass);
+});
+
 app.get('/',(req,res)=>{
 
     res.render("index",{name:'Tom'});          //Rendering HTML files otherwise res.send("text or html code")
